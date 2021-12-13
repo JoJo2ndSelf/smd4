@@ -1,5 +1,3 @@
-#ifndef SMD_UNITY_BUILD
-
 #include "getopt.h"
 
 #include <stddef.h>
@@ -220,5 +218,3 @@ int gop_next(/*int argc, char* const argv[],
   ++ctx->optind;
   return retval;
 }
-
-#endif

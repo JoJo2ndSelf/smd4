@@ -6,7 +6,7 @@
 // allow .c files to compile
 #undef SMD_UNITY_BUILD
 
-#ifdef PLATFORM_WINDOWS
+#ifdef SMD_PLATFORM_WINDOWS
 // for, probably legit, reasons winsock2 must come before windows.h
 #include <WinSock2.h>
 #include <windows.h>
@@ -15,9 +15,9 @@
 
 #include "getopt.c"
 #include "minfs_common.c"
-#ifdef PLATFORM_USE_POSIX
+#ifdef SMD_PLATFORM_USE_POSIX
 #include "minfs_posix.c"
-#elif PLATFORM_WINDOWS
+#elif SMD_PLATFORM_WINDOWS
 #include "minfs_win.c"
 #endif
 

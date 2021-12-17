@@ -5,7 +5,7 @@
 
 #include "minfs.h"
 #include "minfs_common.h"
-#ifndef PLATFORM_MACOS
+#ifndef SMD_PLATFORM_MACOS
 #include <malloc.h>
 #endif
 #include <time.h>

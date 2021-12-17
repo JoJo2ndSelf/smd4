@@ -7,7 +7,7 @@
 #include "minfs_common.h" 
 #include <stdint.h>
 
-#ifdef PLATFORM_WINDOWS
+#ifdef SMD_PLATFORM_WINDOWS
 void utf8_to_uc2(const char* src, minfs_uint16_t* dst, size_t len) {
     len -= sizeof(minfs_uint16_t);   /* save room for null char. */
     while (len >= sizeof(minfs_uint16_t))

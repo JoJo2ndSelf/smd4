@@ -15,8 +15,8 @@
 
 #include "getopt.c"
 #include "minfs_common.c"
-#ifdef PLATFORM_LINUX
-#include "minfs_linux.c"
+#ifdef PLATFORM_USE_POSIX
+#include "minfs_posix.c"
 #elif PLATFORM_WINDOWS
 #include "minfs_win.c"
 #endif
